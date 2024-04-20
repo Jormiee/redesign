@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2382df9ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Shein Redesign</title>
+</head>
+<body>
+    <main class="container">
+        <img src="Shein-logo.png" alt="" class="imag">
+
+        <div class="login_container">
+            <div class="login_form">
+                <h2>
+                    <span class="bold">Sign up / Register</span>
+                </h2>
+                <div class="form-container">
+                    <form class="form column" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <fieldset class="mail_set">
+                            <i class="far fa-envelope mail_icon"></i>
+                            <input type="email" name="email" placeholder="Mobile Number or Email Address">
+                        </fieldset>
+                        <fieldset class="password_set">
+                            <i class="fas fa-lock password_icon"></i>
+                            <input type="password" name="password" placeholder="Password">
+                            <i class="fas fa-eye password_eye"></i>
+                        </fieldset>
+                   
+                        <button type="submit" name="submit" class="btn">Register</button>
+                    </form>
+                    <div class="signin">
+                        <a href="login.php">Login Here</a>
+                        <h3>  Or sign up with
+                        </h3>
+                        <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="google.com"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span class="term">
+                        By continuing, you agree to our <a href="https://ph.shein.com/Privacy-Security-Policy-a-282.html">Privacy & Cookie Policy and Terms & Conditions.</a>
+                        <span class="tomato">
+                           
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+
+</body>
+</html>
